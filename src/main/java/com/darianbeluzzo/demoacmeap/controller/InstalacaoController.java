@@ -1,10 +1,14 @@
-package com.nomealuno.demoacmeap.controller;
+package com.darianbeluzzo.demoacmeap.controller;
 
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import com.darianbeluzzo.demoacmeap.domain.Cliente;
+import com.darianbeluzzo.demoacmeap.domain.Instalacao;
+import com.darianbeluzzo.demoacmeap.exception.RecursoNotFoundException;
+import com.darianbeluzzo.demoacmeap.repository.InstalacaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,11 +20,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.nomealuno.demoacmeap.domain.Cliente;
-import com.nomealuno.demoacmeap.domain.Instalacao;
-import com.nomealuno.demoacmeap.exception.RecursoNotFoundException;
-import com.nomealuno.demoacmeap.repository.ClienteRepository;
-import com.nomealuno.demoacmeap.repository.InstalacaoRepository;
+import com.darianbeluzzo.demoacmeap.repository.ClienteRepository;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -48,7 +48,7 @@ public class InstalacaoController {
 			listaInstalacoes = (ArrayList<Instalacao>) instalacaoRepository.findAll();
 		} catch (Exception e) {
 			// TODO: handle exception
-			throw new RecursoNotFoundException ("Erro ao recuperar lista de instalações");
+			throw new RecursoNotFoundException("Erro ao recuperar lista de instalações");
 		}
 		
 			

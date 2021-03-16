@@ -1,4 +1,4 @@
-package com.nomealuno.demoacmeap.domain;
+package com.darianbeluzzo.demoacmeap.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,12 +1,11 @@
-package com.nomealuno.demoacmeap.repository;
+package com.darianbeluzzo.demoacmeap.repository;
 
 import java.util.List;
 import java.util.Optional;
 
+import com.darianbeluzzo.demoacmeap.domain.Fatura;
+import com.darianbeluzzo.demoacmeap.domain.Instalacao;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.nomealuno.demoacmeap.domain.Fatura;
-import com.nomealuno.demoacmeap.domain.Instalacao;
 
 public interface FaturaRepository extends JpaRepository<Fatura, Long> {
 

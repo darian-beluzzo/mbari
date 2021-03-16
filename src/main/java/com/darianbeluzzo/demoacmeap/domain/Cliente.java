@@ -1,4 +1,4 @@
-package com.nomealuno.demoacmeap.domain;
+package com.darianbeluzzo.demoacmeap.domain;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -15,7 +15,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Cliente {
